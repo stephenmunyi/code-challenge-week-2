@@ -1,19 +1,19 @@
 function swapCase(str){
-    let result = [];
-    for (let i = 0; i < str.length; i++)
-    
-    if(str[i]= str[i].toUpperCase())
-    {
+    let swapString  = '';
 
-    {result.push(str[i].toLowerCase());}
-}
-        else if(str[i] = str[i].toLowerCase())
-    {
-    {result.push(str[i].toUpperCase());}
+    for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (char === char.toUpperCase()) {
+        swapString += char.toLowerCase();
+    } else {
+        swapString += char.toUpperCase();
+    }
+     }
+     return swapString;
+    }
+    function swapCaseandDisplay(){
+        let inputText = document.getElementById('textInput').value;
+        let swapText = swapCase(inputText);
+        document.getElementById('output').textContent = swapText;
+    }
 
-    {result.push(str[i]);}
-
-    return result.join('');
-}
-
-}
